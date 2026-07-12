@@ -3,118 +3,268 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ShinShogi — Support</title>
-<meta name="description" content="Support, FAQ, and privacy policy for ShinShogi: Japanese Chess for iPhone and iPad.">
-<style>
-  :root {
-    --bg: #2e211a;
-    --bg2: #3a2a20;
-    --card: #f3ead2;
-    --card-text: #2b1f16;
-    --accent: #b8432f;
-    --muted: #8a7a6a;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: linear-gradient(175deg, var(--bg) 0%, var(--bg2) 100%);
-    color: #f0e8d8;
-    min-height: 100vh;
-    line-height: 1.6;
-  }
-  .wrap { max-width: 680px; margin: 0 auto; padding: 48px 20px 64px; }
-  header { text-align: center; margin-bottom: 40px; }
-  .koma {
-    display: inline-block;
-    font-size: 56px;
-    background: var(--card);
-    color: var(--card-text);
-    padding: 18px 22px 10px;
-    clip-path: polygon(50% 0%, 88% 22%, 100% 100%, 0% 100%, 12% 22%);
-    margin-bottom: 16px;
-  }
-  h1 { font-size: 2rem; letter-spacing: 0.02em; }
-  h1 .jp { display: block; font-size: 2.6rem; font-weight: 700; margin-bottom: 4px; }
-  header p { color: #cbb9a4; margin-top: 8px; }
-  .card {
-    background: var(--card);
-    color: var(--card-text);
-    border-radius: 14px;
-    padding: 24px 28px;
-    margin-bottom: 20px;
-  }
-  .card h2 { color: var(--accent); font-size: 1.15rem; margin-bottom: 10px; }
-  .card p + p, .card details + details { margin-top: 10px; }
-  .card a { color: var(--accent); font-weight: 600; text-decoration: none; }
-  .card a:hover { text-decoration: underline; }
-  details summary { cursor: pointer; font-weight: 600; }
-  details p { margin-top: 6px; color: #4a3c30; }
-  footer { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 36px; }
-  .btn {
-    display: inline-block;
-    background: var(--accent);
-    color: #fff !important;
-    padding: 10px 22px;
-    border-radius: 10px;
-    margin-top: 8px;
-  }
-</style>
+<title>ShinShogi — Coach, Study &amp; Play Japanese Chess</title>
+<meta name="description" content="ShinShogi is a complete Japanese chess (shogi) app with a real-time blunder coach, game analysis, named AI rivals, an opening explorer, spaced-repetition tactics, and a 5×5 Minishogi variant. Coming soon to the App Store.">
+<link rel="icon" href="assets/icon-32.png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<meta property="og:title" content="ShinShogi — Coach, Study & Play Japanese Chess">
+<meta property="og:description" content="A blunder coach, named AI rivals, an opening explorer, spaced-repetition tactics, and a 5×5 Minishogi variant. Coming soon to the App Store.">
+<meta property="og:image" content="assets/og-image.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="wrap">
 
-  <header>
-    <div class="koma">王</div>
-    <h1><span class="jp">新将棋</span>ShinShogi: Japanese Chess</h1>
-    <p>Coach, study &amp; play shogi — on iPhone and iPad.</p>
-  </header>
-
-  <div class="card">
-    <h2>Support</h2>
-    <p>Questions, bug reports, or feature ideas? Email us and we'll get back to you as soon as we can.</p>
-    <p><a class="btn" href="mailto:jquiogue.apps.support@gmail.com?subject=ShinShogi%20Support">Contact Support</a></p>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <svg class="koma-mini" viewBox="0 0 100 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50 4 L86 34 L94 108 L6 108 L14 34 Z" fill="#f3ead2" stroke="#4a3324" stroke-width="6" stroke-linejoin="round"/>
+      </svg>
+      ShinShogi
+    </a>
+    <nav class="main-nav">
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#pro">Pro</a>
+      <a class="nav-link" href="#faq">FAQ</a>
+      <a class="nav-link" href="support/">Support</a>
+      <a class="btn btn-primary btn-sm" href="#download">Notify Me</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Menu" id="navToggle">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
   </div>
+</header>
 
-  <div class="card">
-    <h2>FAQ</h2>
-    <details>
-      <summary>How do I play online?</summary>
-      <p>Online matches use Apple's Game Center. Sign in to Game Center in the iOS Settings app, then tap <strong>Online Match</strong> on the main menu and choose <strong>Find Match</strong>. Matches are turn-based — you'll be notified when it's your move.</p>
-    </details>
-    <details>
-      <summary>What does Coach mode do?</summary>
-      <p>Turn it on in Settings and ShinShogi warns you when a move looks like a blunder, with a one-tap takeback. After any game, <strong>Analyze</strong> finds your blunders and missed mates — and turns each missed mate into a puzzle you can solve.</p>
-    </details>
-    <details>
-      <summary>Can I import or export games?</summary>
-      <p>Yes. Share any game as KIF (the standard Japanese game-record format) or plain text from the share button in a game. Import a .kif file from Learn ▸ Model Games ▸ Import. Positions can also be shared via standard SFEN notation.</p>
-    </details>
-    <details>
-      <summary>What is spaced-repetition review?</summary>
-      <p>Tsume (mate) puzzles you miss are scheduled to come back soon; ones you solve get spaced further out — like flashcards. Find your due puzzles under Learn ▸ Review.</p>
-    </details>
-    <details>
-      <summary>What does ShinShogi Pro include?</summary>
-      <p>A one-time unlock that adds the Walnut and Slate board themes plus the full mate-in-3 / mate-in-5 tactics and endgame-drill library. Use <strong>Restore Purchases</strong> in Settings if you reinstall.</p>
-    </details>
-    <details>
-      <summary>Does the app need an account or internet?</summary>
-      <p>No account, ever. Everything except online matches works fully offline. Online play signs in through Game Center, handled by Apple.</p>
-    </details>
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">将棋 · Japanese Chess</p>
+        <h1>Play smarter. <span class="accent">Learn faster.</span> Master shogi.</h1>
+        <p class="lede">ShinShogi pairs a real Japanese-chess engine with a coach that catches your
+          blunders, an opening tree you can actually explore, and tactics that come back until
+          they stick. Free to play, no account required.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#download">Notify Me at Launch</a>
+          <a class="btn btn-ghost" href="#features">See what's inside</a>
+        </div>
+        <p class="fine-print">Coming soon to the App Store · iPhone &amp; iPad</p>
+      </div>
+      <div class="phone-frame">
+        <div class="screen"><img src="assets/screenshots/menu.png" alt="ShinShogi home screen showing Play, Learn, and Settings"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIGHLIGHTS -->
+  <section class="highlights">
+    <div class="wrap">
+      <p class="eyebrow" style="display:block;text-align:center;">Why ShinShogi</p>
+      <h2 class="section-title">A teacher, not just a board</h2>
+      <p class="section-lede">Most shogi apps stop at legal moves. ShinShogi actively helps you get better, every game you play.</p>
+      <div class="card-row">
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21c-4.4 0-8-2.7-8-6.5S7.6 8 12 8s8 2.7 8 6.5S16.4 21 12 21Z"/><path d="M9 14v.01M15 14v.01"/><path d="M12 8V4M9 4h6"/></svg>
+          <h3>A coach in your pocket</h3>
+          <p>Coach mode flags likely blunders in real time with a one-tap takeback, and Game Analysis turns every finished game into puzzles made from your own mistakes.</p>
+        </div>
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M6 6l2 2M16 16l2 2M6 18l2-2M16 8l2-2"/></svg>
+          <h3>Named AI rivals</h3>
+          <p>An aggressive ranging-rook attacker, a defensive castle-builder, and more — each with its own personality, from gentle beginner to master.</p>
+        </div>
+        <div class="card">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          <h3>Minishogi, when you want fast</h3>
+          <p>A 5×5 variant with no knights or lances and a single-rank promotion zone — sharp, complete games in a fraction of the time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRO CALLOUT -->
+  <section id="pro" style="background:var(--cream);padding-top:0;">
+    <div class="wrap">
+      <div class="pro-band">
+        <svg class="crown" viewBox="0 0 24 24" fill="currentColor"><path d="M3 8l4 3 5-6 5 6 4-3-2 11H5L3 8Z"/></svg>
+        <div>
+          <h3>ShinShogi Pro — pay once, unlock forever</h3>
+          <p>A single one-time purchase, not a subscription. No recurring charges, ever.</p>
+          <div class="pro-list">
+            <span>✓ Minishogi (5×5)</span>
+            <span>✓ Walnut &amp; Slate board themes</span>
+            <span>✓ Full mate-in-3 / mate-in-5 tactics</span>
+            <span>✓ Endgame drills</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOWCASE -->
+  <section class="showcase">
+    <div class="wrap">
+      <h2 class="section-title">A closer look</h2>
+      <p class="section-lede">Nine real screens from the app — swipe through to see it in action.</p>
+      <div class="showcase-stage">
+        <button class="carousel-btn" id="prevBtn" aria-label="Previous screenshot">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="showcase-frame">
+          <div class="screen"><img id="showcaseImg" src="assets/screenshots/menu.png" alt="ShinShogi screenshot"></div>
+        </div>
+        <button class="carousel-btn" id="nextBtn" aria-label="Next screenshot">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+      <p class="showcase-caption" id="showcaseCaption">Home</p>
+      <div class="showcase-dots" id="showcaseDots"></div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features">
+    <div class="wrap">
+      <h2 class="section-title">Everything you need to improve</h2>
+      <p class="section-lede">Built for players who want to actually get better, not just move pieces.</p>
+      <div class="feature-grid">
+        <div class="feature">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="3"/></svg>
+          <h4>Coach Mode</h4>
+          <p>Real-time blunder warnings with a one-tap takeback.</p>
+        </div>
+        <div class="feature">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V9M12 19V5M20 19v-7"/></svg>
+          <h4>Game Analysis</h4>
+          <p>Finds your blunders and missed mates — and turns them into puzzles.</p>
+        </div>
+        <div class="feature">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="6" r="2.4"/><circle cx="18" cy="6" r="2.4"/><circle cx="18" cy="18" r="2.4"/><path d="M8 7l6 8M18 8.4V15.6"/></svg>
+          <h4>Opening Explorer</h4>
+          <p>Walk a branching tree of openings and see exactly where each line leads.</p>
+        </div>
+        <div class="feature">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12a9 9 0 0 1 15.3-6.4L21 8M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.3 6.4L3 16M3 21v-5h5"/></svg>
+          <h4>Spaced-Repetition Review</h4>
+          <p>Tsume you get wrong resurface, Anki-style, until they stick.</p>
+        </div>
+        <div class="feature">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 2h9l5 5v15H6z"/><path d="M15 2v5h5M9 13h6M9 17h6"/></svg>
+          <h4>KIF Import &amp; Export</h4>
+          <p>Study original annotated games, or import and share your own via .kif.</p>
+        </div>
+        <div class="feature">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+          <h4>Online Play</h4>
+          <p>Turn-based matches over Game Center — no account needed beyond that.</p>
+        </div>
+        <div class="feature">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z"/></svg>
+          <h4>Light &amp; Dark Theme</h4>
+          <p>Choose Light, Dark, or follow the system — designed for both.</p>
+        </div>
+        <div class="feature">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="5" r="2"/><path d="M6 9l6 2 6-2M12 11v4M9 21l3-6 3 6"/></svg>
+          <h4>Full Accessibility</h4>
+          <p>Complete VoiceOver support across the board, hands, and controls.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUTIONS -->
+  <section class="solutions">
+    <div class="wrap">
+      <h2 class="section-title">Built for how people actually improve</h2>
+      <p class="section-lede">Real sticking points shogi players run into — and what ShinShogi does about each one.</p>
+      <div class="solution-row">
+        <div class="solution">
+          <p class="q">"I keep making the same mistakes."</p>
+          <p class="a">Coach Mode catches likely blunders as you play, and Game Analysis reviews finished games for what you missed — including forced mates you walked past.</p>
+          <span class="tag">Coach + Analysis</span>
+        </div>
+        <div class="solution">
+          <p class="q">"Openings feel like pure memorization."</p>
+          <p class="a">The Opening Explorer lets you walk the branches yourself and see where each choice actually leads, instead of drilling a fixed move list.</p>
+          <span class="tag">Opening Explorer</span>
+        </div>
+        <div class="solution">
+          <p class="q">"I solve a puzzle once and forget it."</p>
+          <p class="a">Missed tactics come back on a schedule — solved ones get spaced further out, missed ones resurface sooner, so the patterns actually stick.</p>
+          <span class="tag">Spaced Repetition</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <h2 class="section-title">Questions before launch</h2>
+      <p class="section-lede">The short version — full details live on the support page.</p>
+      <div class="faq">
+        <details open>
+          <summary>Is ShinShogi free?</summary>
+          <p>Yes. The full game, computer opponents, learning tools, and tactics are free. ShinShogi Pro is an optional one-time unlock — not a subscription — for Minishogi, extra board themes, and the full tactics/drills library.</p>
+        </details>
+        <details>
+          <summary>Do I need an account?</summary>
+          <p>No. ShinShogi works fully offline with no sign-in. Online turn-based play uses Apple's Game Center, which handles your identity — ShinShogi never collects it.</p>
+        </details>
+        <details>
+          <summary>What devices will it support?</summary>
+          <p>iPhone and iPad, with layouts tuned for both, plus full VoiceOver accessibility.</p>
+        </details>
+        <details>
+          <summary>When does it launch?</summary>
+          <p>ShinShogi has been approved by Apple and is pending release. Sign up below and you'll be the first to know the moment it's live.</p>
+        </details>
+      </div>
+      <p class="faq-more">More questions? Visit <a href="support/">Support &amp; Privacy</a>.</p>
+    </div>
+  </section>
+
+  <!-- DOWNLOAD -->
+  <section id="download" class="download">
+    <div class="wrap">
+      <p class="eyebrow">Coming soon</p>
+      <h2 class="section-title">Be first to play</h2>
+      <p class="section-lede">ShinShogi is approved and about to launch on the App Store. Leave your email and we'll let you know the moment it's live — no spam, one message.</p>
+
+      <!-- NOTE: swap the form action below for your Formspree (or similar) endpoint.
+           Until then, script.js intercepts submission and falls back to a mailto: link
+           so this never appears broken. -->
+      <form class="notify-form" id="notifyForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <input type="email" name="email" id="notifyEmail" placeholder="you@example.com" required aria-label="Email address">
+        <button class="btn btn-primary" type="submit">Notify Me</button>
+      </form>
+      <p class="form-success" id="formSuccess">Thanks — we'll email you at launch. 🎉</p>
+      <p class="form-note">We'll only email you about the ShinShogi launch.</p>
+
+      <div class="appstore-badge">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 1.5c.1 1.2-.4 2.4-1.1 3.2-.7.9-1.9 1.6-3 1.5-.1-1.1.4-2.4 1.1-3.1.7-.8 2-1.5 3-1.6ZM20 17.2c-.5 1.2-.8 1.7-1.5 2.7-1 1.4-2.3 3.2-4 3.2-1.5 0-1.9-1-3.9-1-2 0-2.5 1-4 1-1.7 0-3-1.9-4-3.3-2.7-3.9-3-8.5-1.3-11 1.2-1.8 3-2.8 4.7-2.8 1.8 0 2.9 1 4.4 1 1.4 0 2.3-1 4.4-1 1.5 0 3.1.8 4.3 2.2-3.7 2-3.1 7.4 1 8.9-.4 1-.6 1.3-1.1 2.1Z"/></svg>
+        <span>Coming soon to the App Store</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>将棋 · Master the game of generals</span>
+    <div class="footer-links">
+      <a href="support/">Support</a>
+      <a href="support/#privacy">Privacy</a>
+      <a href="mailto:jquiogue.apps.support@gmail.com">Contact</a>
+    </div>
   </div>
+</footer>
 
-  <div class="card" id="privacy">
-    <h2>Privacy Policy</h2>
-    <p><strong>ShinShogi collects no data.</strong> There are no accounts, no analytics, no ads, and no third-party SDKs. Your games, puzzle progress, and settings are stored only on your device.</p>
-    <p>Online matches are provided by Apple's Game Center: your Game Center identity and match data are handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>; ShinShogi does not collect, store, or transmit that information to any server of its own.</p>
-    <p>Purchases are processed by the App Store; we never see your payment details.</p>
-  </div>
-
-  <footer>
-    将棋 · Master the game of generals<br>
-    © 2026 ShinShogi. All rights reserved.
-  </footer>
-
-</div>
+<script src="script.js"></script>
 </body>
 </html>

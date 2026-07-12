@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShinShogi — Support</title>
+<meta name="description" content="Support, FAQ, and privacy policy for ShinShogi: Japanese Chess for iPhone and iPad.">
+<link rel="icon" href="../assets/icon-32.png">
+<style>
+  :root {
+    --bg: #2e211a;
+    --bg2: #3a2a20;
+    --card: #f3ead2;
+    --card-text: #2b1f16;
+    --accent: #b8432f;
+    --muted: #8a7a6a;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: linear-gradient(175deg, var(--bg) 0%, var(--bg2) 100%);
+    color: #f0e8d8;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 32px 20px 64px; }
+  .back-link { display: inline-block; color: #cbb9a4; text-decoration: none; font-size: .9rem; margin-bottom: 24px; }
+  .back-link:hover { color: #f0e8d8; }
+  header { text-align: center; margin-bottom: 40px; }
+  .koma {
+    display: inline-block;
+    font-size: 56px;
+    background: var(--card);
+    color: var(--card-text);
+    padding: 18px 22px 10px;
+    clip-path: polygon(50% 0%, 88% 22%, 100% 100%, 0% 100%, 12% 22%);
+    margin-bottom: 16px;
+  }
+  h1 { font-size: 2rem; letter-spacing: 0.02em; }
+  h1 .jp { display: block; font-size: 2.6rem; font-weight: 700; margin-bottom: 4px; }
+  header p { color: #cbb9a4; margin-top: 8px; }
+  .card {
+    background: var(--card);
+    color: var(--card-text);
+    border-radius: 14px;
+    padding: 24px 28px;
+    margin-bottom: 20px;
+  }
+  .card h2 { color: var(--accent); font-size: 1.15rem; margin-bottom: 10px; }
+  .card p + p, .card details + details { margin-top: 10px; }
+  .card a { color: var(--accent); font-weight: 600; text-decoration: none; }
+  .card a:hover { text-decoration: underline; }
+  details summary { cursor: pointer; font-weight: 600; }
+  details p { margin-top: 6px; color: #4a3c30; }
+  footer { text-align: center; color: var(--muted); font-size: 0.85rem; margin-top: 36px; }
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff !important;
+    padding: 10px 22px;
+    border-radius: 10px;
+    margin-top: 8px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="back-link" href="../">&larr; Back to ShinShogi</a>
+
+  <header>
+    <div class="koma">王</div>
+    <h1><span class="jp">新将棋</span>ShinShogi: Japanese Chess</h1>
+    <p>Coach, study &amp; play shogi — on iPhone and iPad.</p>
+  </header>
+
+  <div class="card">
+    <h2>Support</h2>
+    <p>Questions, bug reports, or feature ideas? Email us and we'll get back to you as soon as we can.</p>
+    <p><a class="btn" href="mailto:jquiogue.apps.support@gmail.com?subject=ShinShogi%20Support">Contact Support</a></p>
+  </div>
+
+  <div class="card">
+    <h2>FAQ</h2>
+    <details>
+      <summary>How do I play online?</summary>
+      <p>Online matches use Apple's Game Center. Sign in to Game Center in the iOS Settings app, then tap <strong>Online Match</strong> on the main menu and choose <strong>Find Match</strong>. Matches are turn-based — you'll be notified when it's your move.</p>
+    </details>
+    <details>
+      <summary>What does Coach mode do?</summary>
+      <p>Turn it on in Settings and ShinShogi warns you when a move looks like a blunder, with a one-tap takeback. After any game, <strong>Analyze</strong> finds your blunders and missed mates — and turns each missed mate into a puzzle you can solve.</p>
+    </details>
+    <details>
+      <summary>Can I import or export games?</summary>
+      <p>Yes. Share any game as KIF (the standard Japanese game-record format) or plain text from the share button in a game. Import a .kif file from Learn ▸ Model Games ▸ Import. Positions can also be shared via standard SFEN notation.</p>
+    </details>
+    <details>
+      <summary>What is spaced-repetition review?</summary>
+      <p>Tsume (mate) puzzles you miss are scheduled to come back soon; ones you solve get spaced further out — like flashcards. Find your due puzzles under Learn ▸ Review.</p>
+    </details>
+    <details>
+      <summary>What is Minishogi?</summary>
+      <p>A 5×5 variant with one pawn per side, no knights or lances, and a single-rank promotion zone — fast, sharp games. Find it under Play ▸ Minishogi.</p>
+    </details>
+    <details>
+      <summary>What does ShinShogi Pro include?</summary>
+      <p>A one-time unlock that adds Minishogi, the Walnut and Slate board themes, and the full mate-in-3 / mate-in-5 tactics and endgame-drill library. Use <strong>Restore Purchases</strong> in Settings if you reinstall.</p>
+    </details>
+    <details>
+      <summary>Does the app need an account or internet?</summary>
+      <p>No account, ever. Everything except online matches works fully offline. Online play signs in through Game Center, handled by Apple.</p>
+    </details>
+  </div>
+
+  <div class="card" id="privacy">
+    <h2>Privacy Policy</h2>
+    <p><strong>ShinShogi collects no data.</strong> There are no accounts, no analytics, no ads, and no third-party SDKs. Your games, puzzle progress, and settings are stored only on your device.</p>
+    <p>Online matches are provided by Apple's Game Center: your Game Center identity and match data are handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>; ShinShogi does not collect, store, or transmit that information to any server of its own.</p>
+    <p>Purchases are processed by the App Store; we never see your payment details.</p>
+  </div>
+
+  <footer>
+    将棋 · Master the game of generals<br>
+    © 2026 ShinShogi. All rights reserved.
+  </footer>
+
+</div>
+</body>
+</html>
