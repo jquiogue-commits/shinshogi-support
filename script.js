@@ -17,6 +17,7 @@
   /* ---------- Screenshot carousel ---------- */
   var shots = [
     { src: "assets/screenshots/menu.png", caption: "Home" },
+    { src: "assets/screenshots/dark.png", caption: "Dark Theme" },
     { src: "assets/screenshots/minishogi.png", caption: "Minishogi (5×5)" },
     { src: "assets/screenshots/coach.png", caption: "Coach Mode" },
     { src: "assets/screenshots/rivals.png", caption: "Named AI Rivals" },
